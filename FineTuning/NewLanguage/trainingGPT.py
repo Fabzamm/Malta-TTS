@@ -213,7 +213,7 @@ def train_gpt(metadatas: list, language: str, mel_norm_file: str, dvae_checkpoin
       save_n_checkpoints=1,
       save_checkpoints=True,
       target_loss="", # "loss",
-      print_eval=True,
+      print_eval=False, # This was 'True', trying to set it as 'False' to remove the evaluation text
       run_eval_steps=save_step,
       optimizer="AdamW",
 
